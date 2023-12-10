@@ -1,0 +1,24 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: ; */
+  align-items: center;
+  padding: 20px;
+}
+
+.main-img {
+  background-image: url(https://www.rovisys.com/media/vbvntwuc/istock-490607496.jpg);
+  height: 1000px;
+  background-position: center;
+  background-size: cover;
+
+}
