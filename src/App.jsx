@@ -14,7 +14,7 @@ function App() {
       </nav>
       <main className="main-img">
         <div className="main-inner">
-          <div className='left-main' style={{ width: '400px' }}>
+          <div className="left-main" style={{ width: '400px' }}>
             <div
               style={{
                 fontSize: '3rem',
@@ -54,7 +54,7 @@ function App() {
           </div>
 
           <div
-          className='right-main'
+            className="right-main"
             style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}
           >
             <div
@@ -171,7 +171,11 @@ function App() {
                   padding: '10px'
                 }}
               >
-                Queue the fancy animation.s..... Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eligendi quisquam quod quis! Consectetur laboriosam dolorum deserunt eius officiis fugiat? Consequuntur delectus expedita a incidunt praesentium aliquam, dignissimos consequatur ratione?
+                Queue the fancy animation.s..... Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Aliquam eligendi quisquam quod
+                quis! Consectetur laboriosam dolorum deserunt eius officiis
+                fugiat? Consequuntur delectus expedita a incidunt praesentium
+                aliquam, dignissimos consequatur ratione?
               </div>
             </div>
           </div>
