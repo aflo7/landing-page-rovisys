@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 * {
@@ -10,15 +11,88 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  /* justify-content: ; */
   align-items: center;
-  padding: 20px;
+  padding: 40px;
 }
 
 .main-img {
-  background-image: url(https://www.rovisys.com/media/vbvntwuc/istock-490607496.jpg);
-  height: 1000px;
+  background: rgba(0, 0, 0, 0.7)
+    url(https://www.rovisys.com/media/vbvntwuc/istock-490607496.jpg);
   background-position: center;
   background-size: cover;
+  background-blend-mode: darken;
+  display: flex;
+  justify-content: center;
+}
 
+.main-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 20px;
+  gap: 60px;
+  max-width: 500px;
+}
+
+.main-right > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom: 1px solid white;
+}
+
+.left-main-text {
+  color: white;
+  text-align: center;
+}
+
+@keyframes leftToRight {
+  from {
+    right: 20px;
+  }
+  to {
+    right: 0px;
+  }
+}
+
+@keyframes rightToLeft {
+  from {
+    left: 20px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .main-inner {
+    flex-direction: row;
+    max-width: 1100px;
+    gap: 140px;
+  padding: 80px 20px;
+
+  }
+
+  .main-right > div {
+    border-right: 2px solid white;
+    border-bottom: none;
+  }
+
+  .left-main-text {
+    text-align: left;
+  }
+
+  .left-main {
+    position: relative;
+    animation: leftToRight 2s;
+  }
+
+  .right-main {
+    position: relative;
+    animation: rightToLeft 2s;
+  }
+
+  .right-main > div {
+    width: 400px;
+  }
 }
